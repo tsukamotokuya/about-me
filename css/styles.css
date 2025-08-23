@@ -520,6 +520,320 @@ h1, h2, h3, h4, h5, h6, p, span, a, li {
 }
 
 /* ==========================================================================
+   Hobby Detail Sections
+   ========================================================================== */
+
+.detail-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.detail-intro {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.detail-icon {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 2rem;
+    background: linear-gradient(135deg, var(--accent-color) 0%, var(--accent-dark) 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 3rem;
+}
+
+.detail-intro h3 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--accent-light);
+}
+
+.detail-intro p {
+    font-size: 1.2rem;
+    color: var(--text-light);
+    line-height: 1.8;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.detail-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.detail-card {
+    background: #111111;
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--accent-dark);
+    transition: var(--transition);
+}
+
+.detail-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(255, 255, 255, 0.1);
+}
+
+.detail-card h4 {
+    color: var(--accent-light);
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.detail-card h4 i {
+    margin-right: 0.5rem;
+    color: var(--accent-color);
+}
+
+.detail-card p {
+    color: var(--text-light);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+/* Game Lists */
+.game-list {
+    list-style: none;
+    padding: 0;
+}
+
+.game-list li {
+    padding: 0.5rem 0;
+    color: var(--text-light);
+    border-bottom: 1px solid #333;
+}
+
+.game-list li:before {
+    content: "🎮 ";
+    margin-right: 0.5rem;
+}
+
+/* Gaming Philosophy */
+.gaming-philosophy, .dance-benefits, .shooting-philosophy {
+    background: #111111;
+    padding: 2.5rem;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--accent-dark);
+    margin-top: 2rem;
+}
+
+.gaming-philosophy h4, .dance-benefits h4, .shooting-philosophy h4 {
+    color: var(--accent-light);
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.philosophy-items {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.philosophy-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.philosophy-icon {
+    font-size: 2rem;
+    min-width: 60px;
+    text-align: center;
+}
+
+.philosophy-item h5 {
+    color: var(--accent-color);
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.philosophy-item p {
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+/* Dance Specific Styles */
+.skill-progress-small {
+    margin-top: 1rem;
+}
+
+.skill-progress-small span {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--accent-color);
+    font-weight: 500;
+}
+
+.progress-bar {
+    height: 6px;
+    background-color: #333;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--accent-color), var(--accent-dark));
+    transition: width 2s ease;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+}
+
+.benefit-item {
+    text-align: center;
+    padding: 1.5rem;
+    background: #000000;
+    border-radius: var(--border-radius);
+    border: 1px solid #333;
+}
+
+.benefit-item i {
+    font-size: 2rem;
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+}
+
+.benefit-item h5 {
+    color: var(--accent-light);
+    margin-bottom: 0.5rem;
+}
+
+.benefit-item p {
+    color: var(--text-light);
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* Shooting Specific Styles */
+.shooting-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.shooting-stats span {
+    background: #000000;
+    padding: 0.5rem;
+    border-radius: 5px;
+    color: var(--accent-color);
+    font-weight: 500;
+    border: 1px solid #333;
+}
+
+.achievements {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.achievements span {
+    background: #000000;
+    padding: 0.5rem;
+    border-radius: 5px;
+    color: var(--accent-light);
+    border: 1px solid #333;
+}
+
+.philosophy-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+.philosophy-card {
+    text-align: center;
+    padding: 1.5rem;
+    background: #000000;
+    border-radius: var(--border-radius);
+    border: 1px solid #333;
+}
+
+.philosophy-card i {
+    font-size: 2rem;
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+}
+
+.philosophy-card h5 {
+    color: var(--accent-light);
+    margin-bottom: 0.5rem;
+}
+
+.philosophy-card p {
+    color: var(--text-light);
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.safety-note {
+    background: #111111;
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--accent-color);
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.safety-note i {
+    font-size: 2rem;
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+}
+
+.safety-note h4 {
+    color: var(--accent-light);
+    margin-bottom: 1rem;
+}
+
+.safety-note p {
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+/* Responsive Design for Detail Sections */
+@media (max-width: 768px) {
+    .detail-icon {
+        width: 80px;
+        height: 80px;
+        font-size: 2rem;
+    }
+    
+    .detail-intro h3 {
+        font-size: 2rem;
+    }
+    
+    .detail-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .benefits-grid, .philosophy-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .philosophy-items {
+        gap: 1rem;
+    }
+    
+    .philosophy-item {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* ==========================================================================
    Contact Section
    ========================================================================== */
 
