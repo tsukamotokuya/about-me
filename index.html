@@ -3,38 +3,184 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>自己紹介</title>
+    <title>塚本空弥 - 自己紹介サイト</title>
     <!-- reset.css ress -->
     <link rel="stylesheet" href="https://unpkg.com/ress/dest/ress.min.css">
     <link rel="stylesheet" href="css/styles.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-<boby class="body">
-    <header class="header">
-        <nav class="nav">
-            <ul>
-                <li><a href="#profile">プロフィール</a></li>
-                <li><a href="#hobbies">趣味</a></li>
+<body class="body">
+    <!-- ヒーローセクション -->
+    <section class="hero">
+        <div class="hero-background"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">塚本空弥</h1>
+            <p class="hero-subtitle">ようこそ私の世界へ</p>
+            <div class="hero-buttons">
+                <a href="#profile" class="btn btn-primary">プロフィールを見る</a>
+                <a href="#hobbies" class="btn btn-secondary">趣味について</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- ナビゲーション -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">塚本空弥</a>
+            <ul class="nav-menu">
+                <li><a href="#profile" class="nav-link">プロフィール</a></li>
+                <li><a href="#hobbies" class="nav-link">趣味</a></li>
+                <li><a href="#skills" class="nav-link">スキル</a></li>
+                <li><a href="#contact" class="nav-link">お問い合わせ</a></li>
             </ul>
-        </nav>
-        <h1>僕の自己紹介サイト</h1>
-    </header>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
     <main>
-        <section id="hobbies">
-            <h2>プロフィール</h2>
-            <p>こんにちは、僕は塚本空弥です。これは僕の自己紹介サイトです。</p>
+        <!-- プロフィールセクション -->
+        <section id="profile" class="section profile-section">
+            <div class="container">
+                <h2 class="section-title">プロフィール</h2>
+                <div class="profile-content">
+                    <div class="profile-image">
+                        <img src="images/profile.jpg" alt="塚本空弥" onerror="this.style.display='none'">
+                        <div class="profile-placeholder">
+                            <i class="fas fa-user"></i>
+                        </div>
+                    </div>
+                    <div class="profile-text">
+                        <h3>こんにちは！</h3>
+                        <p>私は塚本空弥です。このサイトでは私の趣味や興味のあることについて紹介しています。</p>
+                        <p>新しいことを学ぶことが好きで、特にゲーム、読書、ダンスに情熱を注いでいます。</p>
+                        <div class="profile-stats">
+                            <div class="stat">
+                                <span class="stat-number">3</span>
+                                <span class="stat-label">主な趣味</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">∞</span>
+                                <span class="stat-label">学習意欲</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section id="hobbies">
-            <h2>趣味</h2>
-            <ul>
-                <li>ゲーム</li>
-                <li>読書</li>
-                <li>ダンス</li>
-            </ul>
+
+        <!-- 趣味セクション -->
+        <section id="hobbies" class="section hobbies-section">
+            <div class="container">
+                <h2 class="section-title">趣味</h2>
+                <div class="hobbies-grid">
+                    <div class="hobby-card">
+                        <div class="hobby-icon">
+                            <i class="fas fa-gamepad"></i>
+                        </div>
+                        <h3>ゲーム</h3>
+                        <p>様々なジャンルのゲームを楽しんでいます。戦略ゲームからアクションゲームまで幅広くプレイしています。</p>
+                    </div>
+                    <div class="hobby-card">
+                        <div class="hobby-icon">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <h3>読書</h3>
+                        <p>小説からビジネス書まで、多様なジャンルの本を読むことで知識を深めています。</p>
+                    </div>
+                    <div class="hobby-card">
+                        <div class="hobby-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <h3>ダンス</h3>
+                        <p>音楽に合わせて体を動かすことで、表現力と体力を向上させています。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- スキルセクション -->
+        <section id="skills" class="section skills-section">
+            <div class="container">
+                <h2 class="section-title">スキル・興味分野</h2>
+                <div class="skills-content">
+                    <div class="skill-category">
+                        <h3>技術スキル</h3>
+                        <div class="skill-bars">
+                            <div class="skill-bar">
+                                <span class="skill-name">HTML/CSS</span>
+                                <div class="skill-progress">
+                                    <div class="skill-fill" data-skill="75"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <span class="skill-name">JavaScript</span>
+                                <div class="skill-progress">
+                                    <div class="skill-fill" data-skill="60"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <span class="skill-name">Web Design</span>
+                                <div class="skill-progress">
+                                    <div class="skill-fill" data-skill="70"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>その他のスキル</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">コミュニケーション</span>
+                            <span class="skill-tag">問題解決</span>
+                            <span class="skill-tag">創造性</span>
+                            <span class="skill-tag">チームワーク</span>
+                            <span class="skill-tag">継続学習</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- お問い合わせセクション -->
+        <section id="contact" class="section contact-section">
+            <div class="container">
+                <h2 class="section-title">お問い合わせ</h2>
+                <div class="contact-content">
+                    <p>ご質問やご相談がございましたら、お気軽にお声がけください。</p>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>contact@example.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-twitter"></i>
+                            <span>@username</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-github"></i>
+                            <span>github.com/username</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
+
     <footer class="footer">
-        <p>&copy; 2025 わたしの自己紹介サイト</p>
+        <div class="container">
+            <p>&copy; 2025 塚本空弥の自己紹介サイト. All rights reserved.</p>
+        </div>
     </footer>
-    <script src="js?scripts.js"></script>
-</boby>
+
+    <script src="js/scripts.js"></script>
+</body>
 </html>
