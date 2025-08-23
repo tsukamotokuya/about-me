@@ -164,7 +164,7 @@ const mobileMenuStyles = `
         box-shadow: 0 10px 27px rgba(255, 255, 255, 0.05);
         z-index: 999;
         padding: 2rem 0;
-        border-top: 1px solid #333;
+        border-top: 1px solid #6B7280;
     }
 
     .nav-menu.active {

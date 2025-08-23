@@ -5,12 +5,14 @@
 :root {
     --primary-color: #60A5FA;
     --secondary-color: #3B82F6;
-    --accent-color: #F59E0B;
+    --accent-color: #9CA3AF;
+    --accent-light: #D1D5DB;
+    --accent-dark: #6B7280;
     --text-color: #FFFFFF;
     --text-light: #D1D5DB;
     --background-color: #000000;
-    --section-bg: #111111;
-    --gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    --section-bg: #000000;
+    --gradient: linear-gradient(135deg, #000000 0%, #111111 100%);
     --shadow: 0 10px 30px rgba(255, 255, 255, 0.1);
     --border-radius: 12px;
     --transition: all 0.3s ease;
@@ -32,6 +34,15 @@ body {
     color: var(--text-color);
     background-color: var(--background-color);
     overflow-x: hidden;
+}
+
+/* Ensure all text is white */
+* {
+    color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, a, li {
+    color: var(--text-color) !important;
 }
 
 .container {
@@ -73,8 +84,8 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="1" fill="white" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
-    opacity: 0.3;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="1" fill="white" opacity="0.02"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+    opacity: 0.1;
 }
 
 @keyframes gradientShift {
@@ -270,10 +281,11 @@ body {
 .section {
     padding: 100px 0;
     position: relative;
+    background-color: var(--background-color);
 }
 
 .section:nth-child(even) {
-    background-color: var(--section-bg);
+    background-color: var(--background-color);
 }
 
 .section-title {
@@ -293,7 +305,7 @@ body {
     transform: translateX(-50%);
     width: 60px;
     height: 4px;
-    background: var(--gradient);
+    background: var(--accent-color);
     border-radius: 2px;
 }
 
@@ -319,14 +331,14 @@ body {
     border-radius: 50%;
     object-fit: cover;
     box-shadow: var(--shadow);
-    border: 5px solid white;
+    border: 5px solid var(--accent-dark);
 }
 
 .profile-placeholder {
     width: 300px;
     height: 300px;
     border-radius: 50%;
-    background: var(--gradient);
+    background: linear-gradient(135deg, var(--accent-color) 0%, var(--accent-dark) 100%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -339,7 +351,7 @@ body {
 .profile-text h3 {
     font-size: 2rem;
     margin-bottom: 1rem;
-    color: var(--primary-color);
+    color: var(--accent-light);
 }
 
 .profile-text p {
@@ -358,18 +370,18 @@ body {
 .stat {
     text-align: center;
     padding: 1.5rem;
-    background: var(--section-bg);
+    background: #111111;
     border-radius: var(--border-radius);
     box-shadow: var(--shadow);
     flex: 1;
-    border: 1px solid #333;
+    border: 1px solid var(--accent-dark);
 }
 
 .stat-number {
     display: block;
     font-size: 2.5rem;
     font-weight: 700;
-    color: var(--primary-color);
+    color: var(--accent-color);
     margin-bottom: 0.5rem;
 }
 
@@ -389,7 +401,7 @@ body {
 }
 
 .hobby-card {
-    background: var(--section-bg);
+    background: #111111;
     padding: 2.5rem;
     border-radius: var(--border-radius);
     box-shadow: var(--shadow);
@@ -397,7 +409,7 @@ body {
     transition: var(--transition);
     position: relative;
     overflow: hidden;
-    border: 1px solid #333;
+    border: 1px solid var(--accent-dark);
 }
 
 .hobby-card::before {
@@ -407,7 +419,7 @@ body {
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(59, 130, 246, 0.1), transparent);
+    background: linear-gradient(90deg, transparent, rgba(156, 163, 175, 0.1), transparent);
     transition: var(--transition);
 }
 
@@ -424,7 +436,7 @@ body {
     width: 80px;
     height: 80px;
     margin: 0 auto 1.5rem;
-    background: var(--gradient);
+    background: linear-gradient(135deg, var(--accent-color) 0%, var(--accent-dark) 100%);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -535,11 +547,11 @@ body {
     align-items: center;
     gap: 0.5rem;
     padding: 1rem 1.5rem;
-    background: var(--section-bg);
+    background: #111111;
     border-radius: var(--border-radius);
     box-shadow: var(--shadow);
     transition: var(--transition);
-    border: 1px solid #333;
+    border: 1px solid var(--accent-dark);
 }
 
 .contact-item:hover {
@@ -548,7 +560,7 @@ body {
 }
 
 .contact-item i {
-    color: var(--primary-color);
+    color: var(--accent-color);
     font-size: 1.2rem;
 }
 
@@ -557,12 +569,12 @@ body {
    ========================================================================== */
 
 .footer {
-    background-color: var(--section-bg);
+    background-color: #000000;
     color: var(--text-color);
     text-align: center;
     padding: 2rem 0;
     position: relative;
-    border-top: 1px solid #333;
+    border-top: 1px solid var(--accent-dark);
 }
 
 /* ==========================================================================
