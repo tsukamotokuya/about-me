@@ -3,15 +3,15 @@
    ========================================================================== */
 
 :root {
-    --primary-color: #3B82F6;
-    --secondary-color: #1E40AF;
+    --primary-color: #60A5FA;
+    --secondary-color: #3B82F6;
     --accent-color: #F59E0B;
-    --text-color: #1F2937;
-    --text-light: #6B7280;
-    --background-color: #FFFFFF;
-    --section-bg: #F9FAFB;
+    --text-color: #FFFFFF;
+    --text-light: #D1D5DB;
+    --background-color: #000000;
+    --section-bg: #111111;
     --gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    --shadow: 0 10px 30px rgba(255, 255, 255, 0.1);
     --border-radius: 12px;
     --transition: all 0.3s ease;
 }
@@ -196,11 +196,11 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.95);
+    background-color: rgba(0, 0, 0, 0.95);
     backdrop-filter: blur(10px);
     z-index: 1000;
     transition: var(--transition);
-    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 20px rgba(255, 255, 255, 0.1);
 }
 
 .nav-container {
@@ -358,10 +358,11 @@ body {
 .stat {
     text-align: center;
     padding: 1.5rem;
-    background: white;
+    background: var(--section-bg);
     border-radius: var(--border-radius);
     box-shadow: var(--shadow);
     flex: 1;
+    border: 1px solid #333;
 }
 
 .stat-number {
@@ -388,7 +389,7 @@ body {
 }
 
 .hobby-card {
-    background: white;
+    background: var(--section-bg);
     padding: 2.5rem;
     border-radius: var(--border-radius);
     box-shadow: var(--shadow);
@@ -396,6 +397,7 @@ body {
     transition: var(--transition);
     position: relative;
     overflow: hidden;
+    border: 1px solid #333;
 }
 
 .hobby-card::before {
@@ -477,7 +479,7 @@ body {
 
 .skill-progress {
     height: 10px;
-    background-color: #E5E7EB;
+    background-color: #333333;
     border-radius: 5px;
     overflow: hidden;
 }
@@ -533,10 +535,11 @@ body {
     align-items: center;
     gap: 0.5rem;
     padding: 1rem 1.5rem;
-    background: white;
+    background: var(--section-bg);
     border-radius: var(--border-radius);
     box-shadow: var(--shadow);
     transition: var(--transition);
+    border: 1px solid #333;
 }
 
 .contact-item:hover {
@@ -554,11 +557,12 @@ body {
    ========================================================================== */
 
 .footer {
-    background-color: var(--text-color);
-    color: white;
+    background-color: var(--section-bg);
+    color: var(--text-color);
     text-align: center;
     padding: 2rem 0;
     position: relative;
+    border-top: 1px solid #333;
 }
 
 /* ==========================================================================
