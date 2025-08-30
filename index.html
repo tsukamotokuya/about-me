@@ -20,8 +20,8 @@
             <h1 class="hero-title">塚本空弥</h1>
             <p class="hero-subtitle">ようこそ私の世界へ</p>
             <div class="hero-buttons">
-                <a href="#profile" class="btn btn-primary">プロフィールを見る</a>
-                <a href="#hobbies" class="btn btn-secondary">趣味について</a>
+                <a href="profile.html" class="btn btn-primary">プロフィールを見る</a>
+                <a href="hobbies.html" class="btn btn-secondary">趣味について</a>
             </div>
         </div>
         <div class="scroll-indicator">
@@ -34,12 +34,12 @@
         <div class="nav-container">
             <a href="#" class="nav-logo">塚本空弥</a>
             <ul class="nav-menu">
-                <li><a href="#profile" class="nav-link">プロフィール</a></li>
-                <li><a href="#hobbies" class="nav-link">趣味</a></li>
-                <li><a href="#gaming" class="nav-link">ゲーム</a></li>
-                <li><a href="#dance" class="nav-link">ダンス</a></li>
-                <li><a href="#shooting" class="nav-link">実銃射撃</a></li>
-                <li><a href="#contact" class="nav-link">お問い合わせ</a></li>
+                <li><a href="profile.html" class="nav-link">プロフィール</a></li>
+                <li><a href="hobbies.html" class="nav-link">趣味</a></li>
+                <li><a href="gaming.html" class="nav-link">ゲーム</a></li>
+                <li><a href="dance.html" class="nav-link">ダンス</a></li>
+                <li><a href="shooting.html" class="nav-link">実銃射撃</a></li>
+                <li><a href="contact.html" class="nav-link">お問い合わせ</a></li>
             </ul>
             <div class="hamburger">
                 <span></span>
@@ -50,304 +50,39 @@
     </nav>
 
     <main>
-        <!-- プロフィールセクション -->
-        <section id="profile" class="section profile-section">
+        <!-- トップページコンテンツ -->
+        <section class="section welcome-section">
             <div class="container">
-                <h2 class="section-title">プロフィール</h2>
-                <div class="profile-content">
-                    <div class="profile-image">
-                        <img src="images/profile.jpg" alt="塚本空弥" onerror="this.style.display='none'">
-                        <div class="profile-placeholder">
+                <h2 class="section-title">ようこそ</h2>
+                <div class="welcome-content">
+                    <p>このサイトでは、私の趣味や興味のあることについて詳しく紹介しています。</p>
+                    <p>各セクションをぜひご覧ください。</p>
+                    <div class="quick-links">
+                        <a href="profile.html" class="quick-link-card">
                             <i class="fas fa-user"></i>
-                        </div>
-                    </div>
-                    <div class="profile-text">
-                        <h3>こんにちは！</h3>
-                        <p>私は塚本空弥です。滋賀県出身で、このサイトでは私の趣味や興味のあることについて紹介しています。</p>
-                        <p>ゲーム（主にアクションゲーム・FPS）、ダンス、実銃射撃</p>
-                        <div class="profile-stats">
-                            <div class="stat">
-                                <span class="stat-number">3</span>
-                                <span class="stat-label">主な趣味</span>
-                            </div>
-                            <div class="stat">
-                                <span class="stat-number">滋賀県</span>
-                                <span class="stat-label">出身地</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 趣味セクション -->
-        <section id="hobbies" class="section hobbies-section">
-            <div class="container">
-                <h2 class="section-title">趣味</h2>
-                <div class="hobbies-grid">
-                    <div class="hobby-card">
-                        <div class="hobby-icon">
+                            <h3>プロフィール</h3>
+                            <p>私の基本的な情報について</p>
+                        </a>
+                        <a href="hobbies.html" class="quick-link-card">
+                            <i class="fas fa-heart"></i>
+                            <h3>趣味一覧</h3>
+                            <p>私の趣味の概要について</p>
+                        </a>
+                        <a href="gaming.html" class="quick-link-card">
                             <i class="fas fa-gamepad"></i>
-                        </div>
-                        <h3>ゲーム</h3>
-                        <p>主にアクションゲームとFPS（ファーストパーソンシューティング）をプレイしています。瞬時の判断力と精密な操作が求められるジャンルが好きです。</p>
-                    </div>
-                    <div class="hobby-card">
-                        <div class="hobby-icon">
+                            <h3>ゲーム</h3>
+                            <p>アクションゲームとFPSについて</p>
+                        </a>
+                        <a href="dance.html" class="quick-link-card">
                             <i class="fas fa-music"></i>
-                        </div>
-                        <h3>ダンス</h3>
-                        <p>音楽に合わせて体を動かすことで、表現力と体力を向上させています。</p>
-                    </div>
-                    <div class="hobby-card">
-                        <div class="hobby-icon">
+                            <h3>ダンス</h3>
+                            <p>音楽と身体表現について</p>
+                        </a>
+                        <a href="shooting.html" class="quick-link-card">
                             <i class="fas fa-bullseye"></i>
-                        </div>
-                        <h3>実銃射撃</h3>
-                        <p>集中力と正確性を鍛える実銃射撃を通じて、心身の鍛錬に取り組んでいます。</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ゲーム詳細セクション -->
-        <section id="gaming" class="section gaming-detail-section">
-            <div class="container">
-                <h2 class="section-title">ゲームについて</h2>
-                <div class="detail-content">
-                    <div class="detail-intro">
-                        <div class="detail-icon">
-                            <i class="fas fa-gamepad"></i>
-                        </div>
-                        <h3>ゲームへの情熱</h3>
-                        <p>ゲームは私にとって単なる娯楽を超えた存在です。特にアクションゲームとFPSを中心にプレイしており、戦略的思考、反射神経、創造性を養う素晴らしい媒体だと考えています。瞬時の判断力と正確な操作が求められるジャンルが好きです。</p>
-                    </div>
-                    
-                    <div class="detail-grid">
-                        <div class="detail-card">
-                            <h4><i class="fas fa-rocket"></i> アクションゲーム</h4>
-                            <p>私の最も得意とするジャンルです。反射神経と手先の器用さを向上させるアクションゲームで、瞬時の判断力が求められる緊張感が魅力です。</p>
-                            <ul class="game-list">
-                                <li>プラットフォーマー</li>
-                                <li>ハック&スラッシュ</li>
-                                <li>アクションRPG</li>
-                            </ul>
-                        </div>
-                        
-                        <div class="detail-card">
-                            <h4><i class="fas fa-crosshairs"></i> FPS (ファーストパーソンシューティング)</h4>
-                            <p>最もプレイ時間が多いジャンルです。精密な照準、戦術的思考、チームワークが重要で、実銃射撃の趣味とも相通じる要素があります。</p>
-                            <ul class="game-list">
-                                <li>Counter-Strike シリーズ</li>
-                                <li>Apex Legends</li>
-                                <li>Valorant</li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <div class="gaming-philosophy">
-                        <h4>ゲームから学んだこと</h4>
-                        <div class="philosophy-items">
-                            <div class="philosophy-item">
-                                <span class="philosophy-icon">🎯</span>
-                                <div>
-                                    <h5>精密な照準と集中力</h5>
-                                    <p>FPSゲームでの精密射撃は、実銃射撃の趣味にも活かされ、集中力と手先の器用さが大幅に向上しました。</p>
-                                </div>
-                            </div>
-                            <div class="philosophy-item">
-                                <span class="philosophy-icon">⚡</span>
-                                <div>
-                                    <h5>瞬時の判断力</h5>
-                                    <p>アクションゲームでの高速な状況判断は、日常生活での決断力向上にもつながっています。</p>
-                                </div>
-                            </div>
-                            <div class="philosophy-item">
-                                <span class="philosophy-icon">🤝</span>
-                                <div>
-                                    <h5>チーム戦術とコミュニケーション</h5>
-                                    <p>FPSの競技シーンでのチーム戦を通じて、効果的なコミュニケーションと戦術理解が身に付きました。</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ダンス詳細セクション -->
-        <section id="dance" class="section dance-detail-section">
-            <div class="container">
-                <h2 class="section-title">ダンスについて</h2>
-                <div class="detail-content">
-                    <div class="detail-intro">
-                        <div class="detail-icon">
-                            <i class="fas fa-music"></i>
-                        </div>
-                        <h3>音楽と身体の調和</h3>
-                        <p>ダンスは音楽と身体を通じた表現芸術です。リズムに合わせて体を動かすことで、心身の健康と表現力を向上させています。</p>
-                    </div>
-                    
-                    <div class="detail-grid">
-                        <div class="detail-card">
-                            <h4><i class="fas fa-fire"></i> ヒップホップ</h4>
-                            <p>力強い動きとリズム感を重視するヒップホップダンスで、表現力とエネルギーを発散しています。</p>
-                            <div class="skill-progress-small">
-                                <span>習得度</span>
-                                <div class="progress-bar">
-                                    <div class="progress-fill" style="width: 75%"></div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="detail-card">
-                            <h4><i class="fas fa-heart"></i> コンテンポラリー</h4>
-                            <p>流れるような動きと感情表現を重視するコンテンポラリーダンスで、内面的な表現を探求しています。</p>
-                            <div class="skill-progress-small">
-                                <span>習得度</span>
-                                <div class="progress-bar">
-                                    <div class="progress-fill" style="width: 60%"></div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="detail-card">
-                            <h4><i class="fas fa-star"></i> フリースタイル</h4>
-                            <p>即興で踊るフリースタイルダンスで、創造性と自由な表現を楽しんでいます。</p>
-                            <div class="skill-progress-small">
-                                <span>習得度</span>
-                                <div class="progress-bar">
-                                    <div class="progress-fill" style="width: 80%"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="dance-benefits">
-                        <h4>ダンスから得られる効果</h4>
-                        <div class="benefits-grid">
-                            <div class="benefit-item">
-                                <i class="fas fa-dumbbell"></i>
-                                <h5>体力向上</h5>
-                                <p>持久力と筋力が自然に向上し、健康的な身体を維持しています。</p>
-                            </div>
-                            <div class="benefit-item">
-                                <i class="fas fa-brain"></i>
-                                <h5>表現力</h5>
-                                <p>言葉では表現できない感情を身体で表現する能力が身に付きました。</p>
-                            </div>
-                            <div class="benefit-item">
-                                <i class="fas fa-smile"></i>
-                                <h5>ストレス解消</h5>
-                                <p>音楽に合わせて体を動かすことで、日々のストレスを効果的に解消しています。</p>
-                            </div>
-                            <div class="benefit-item">
-                                <i class="fas fa-users"></i>
-                                <h5>社交性</h5>
-                                <p>ダンスコミュニティでの交流を通じて、多くの仲間と出会えました。</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 実銃射撃詳細セクション -->
-        <section id="shooting" class="section shooting-detail-section">
-            <div class="container">
-                <h2 class="section-title">実銃射撃について</h2>
-                <div class="detail-content">
-                    <div class="detail-intro">
-                        <div class="detail-icon">
-                            <i class="fas fa-bullseye"></i>
-                        </div>
-                        <h3>精密性と集中力の追求</h3>
-                        <p>実銃射撃は極めて高い集中力と精密性を要求するスポーツです。安全性を最優先に、技術向上と精神鍛錬に取り組んでいます。</p>
-                    </div>
-                    
-                    <div class="detail-grid">
-                        <div class="detail-card">
-                            <h4><i class="fas fa-crosshairs"></i> ライフル射撃</h4>
-                            <p>長距離での精密射撃を行うライフル競技で、呼吸法と姿勢の安定性を重視しています。</p>
-                            <div class="shooting-stats">
-                                <span>最高スコア: 95/100</span>
-                                <span>平均スコア: 87/100</span>
-                            </div>
-                        </div>
-                        
-                        <div class="detail-card">
-                            <h4><i class="fas fa-circle-dot"></i> ピストル射撃</h4>
-                            <p>手持ちでの射撃技術と瞬時の照準調整能力を向上させるピストル競技に参加しています。</p>
-                            <div class="shooting-stats">
-                                <span>最高スコア: 88/100</span>
-                                <span>平均スコア: 82/100</span>
-                            </div>
-                        </div>
-                        
-                        <div class="detail-card">
-                            <h4><i class="fas fa-medal"></i> 競技参加</h4>
-                            <p>地域の射撃競技大会に定期的に参加し、技術向上と他の射撃愛好家との交流を楽しんでいます。</p>
-                            <div class="achievements">
-                                <span>🥉 地域大会 3位入賞</span>
-                                <span>🎯 月例競技 上位入賞多数</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="shooting-philosophy">
-                        <h4>射撃を通じて学んだこと</h4>
-                        <div class="philosophy-grid">
-                            <div class="philosophy-card">
-                                <i class="fas fa-eye"></i>
-                                <h5>集中力の向上</h5>
-                                <p>一瞬の集中で結果が決まる射撃は、日常生活での集中力向上にも大きく貢献しています。</p>
-                            </div>
-                            <div class="philosophy-card">
-                                <i class="fas fa-shield-alt"></i>
-                                <h5>安全意識</h5>
-                                <p>射撃における厳格な安全ルールを通じて、あらゆる分野での安全意識が高まりました。</p>
-                            </div>
-                            <div class="philosophy-card">
-                                <i class="fas fa-chart-line"></i>
-                                <h5>継続的改善</h5>
-                                <p>わずかな技術改善の積み重ねが大きな成果につながることを実感しています。</p>
-                            </div>
-                            <div class="philosophy-card">
-                                <i class="fas fa-zen"></i>
-                                <h5>精神的安定</h5>
-                                <p>射撃時の呼吸法と瞑想的な集中状態が、精神的な安定をもたらしています。</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="safety-note">
-                        <i class="fas fa-exclamation-triangle"></i>
-                        <h4>安全への取り組み</h4>
-                        <p>実銃射撃は認可された射撃場でのみ行い、すべての安全規則を厳守しています。適切な訓練と資格を持つインストラクターの指導の下で技術向上に努めています。</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- お問い合わせセクション -->
-        <section id="contact" class="section contact-section">
-            <div class="container">
-                <h2 class="section-title">お問い合わせ</h2>
-                <div class="contact-content">
-                    <p>ご質問やご相談がございましたら、お気軽にお声がけください。</p>
-                    <div class="contact-info">
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <span>contact@example.com</span>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fab fa-twitter"></i>
-                            <span>@username</span>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fab fa-github"></i>
-                            <span>github.com/username</span>
-                        </div>
+                            <h3>実銃射撃</h3>
+                            <p>精密性と集中力の追求について</p>
+                        </a>
                     </div>
                 </div>
             </div>

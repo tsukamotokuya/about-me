@@ -260,6 +260,11 @@ h1, h2, h3, h4, h5, h6, p, span, a, li {
     width: 100%;
 }
 
+.nav-link.active {
+    color: var(--accent-color) !important;
+    border-bottom: 2px solid var(--accent-color);
+}
+
 .hamburger {
     display: none;
     flex-direction: column;
@@ -1002,5 +1007,167 @@ h1, h2, h3, h4, h5, h6, p, span, a, li {
     }
     to {
         width: var(--skill-width);
+    }
+}
+
+/* ページ分割対応スタイル */
+.nav-link.active {
+    color: var(--accent-color) !important;
+    border-bottom: 2px solid var(--accent-color);
+}
+
+/* トップページ用スタイル */
+.welcome-section {
+    background: var(--bg-dark);
+    padding: 4rem 0;
+}
+
+.welcome-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.welcome-content p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-secondary);
+}
+
+.quick-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 3rem;
+}
+
+.quick-link-card {
+    background: var(--bg-light);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 2rem;
+    text-decoration: none;
+    color: var(--text-primary);
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.quick-link-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-color);
+    box-shadow: 0 10px 30px rgba(74, 144, 226, 0.2);
+}
+
+.quick-link-card i {
+    font-size: 3rem;
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+}
+
+.quick-link-card h3 {
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+}
+
+.quick-link-card p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+/* プロフィールページ用スタイル */
+.profile-navigation {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.profile-navigation h3 {
+    margin-bottom: 2rem;
+    color: var(--text-primary);
+}
+
+.nav-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.nav-card {
+    background: var(--bg-light);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-decoration: none;
+    color: var(--text-primary);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.nav-card:hover {
+    border-color: var(--accent-color);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(74, 144, 226, 0.2);
+}
+
+.nav-card i {
+    font-size: 2rem;
+    color: var(--accent-color);
+    margin-bottom: 0.5rem;
+}
+
+.nav-card span {
+    font-weight: 600;
+}
+
+/* 趣味ページ用スタイル */
+.hobby-card-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.hobby-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.card-arrow {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    color: var(--accent-color);
+    font-size: 1.5rem;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.hobby-card-link:hover .card-arrow {
+    opacity: 1;
+    transform: translateX(5px);
+}
+
+.hobby-card-link:hover .hobby-card {
+    transform: translateY(-5px);
+    border-color: var(--accent-color);
+    box-shadow: 0 10px 30px rgba(74, 144, 226, 0.2);
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+    .quick-links {
+        grid-template-columns: 1fr;
+    }
+    
+    .nav-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .quick-link-card {
+        padding: 1.5rem;
+    }
+    
+    .quick-link-card i {
+        font-size: 2.5rem;
     }
 }
