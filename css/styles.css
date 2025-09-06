@@ -994,6 +994,394 @@ h1, h2, h3, h4, h5, h6, p, span, a, li {
 }
 
 /* ==========================================================================
+   Enhanced Responsive Design
+   ========================================================================== */
+
+/* Tablet Portrait and Small Desktop */
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 30px;
+    }
+    
+    .hero {
+        padding: 0 20px;
+    }
+    
+    .section {
+        padding: 80px 0;
+    }
+    
+    .detail-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+    }
+    
+    .dancers-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+    
+    .philosophy-items {
+        gap: 1.5rem;
+    }
+}
+
+/* Tablet and Medium Screens */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 0.8rem 0;
+    }
+    
+    .nav-container {
+        padding: 0 20px;
+    }
+    
+    .nav-logo {
+        font-size: 1.3rem;
+    }
+    
+    .hero {
+        height: 80vh;
+        padding: 0 15px;
+    }
+    
+    .hero-title {
+        font-size: 2.8rem;
+        margin-bottom: 1rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem;
+        margin-bottom: 2rem;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .btn {
+        width: 100%;
+        max-width: 280px;
+        padding: 0.8rem 2rem;
+    }
+    
+    .section {
+        padding: 60px 0;
+    }
+    
+    .section-title {
+        font-size: 2.2rem;
+        margin-bottom: 2rem;
+    }
+    
+    .detail-intro h2 {
+        font-size: 2rem;
+    }
+    
+    .detail-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .detail-card {
+        padding: 2rem;
+    }
+    
+    .dance-details,
+    .music-details {
+        margin-top: 1.5rem;
+    }
+    
+    .dancers-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .dancer-card {
+        padding: 1.5rem;
+    }
+    
+    .dance-features,
+    .music-list {
+        padding-left: 1rem;
+    }
+    
+    .philosophy-items {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    
+    .philosophy-item {
+        flex-direction: row;
+        text-align: left;
+    }
+    
+    .philosophy-icon {
+        font-size: 2rem;
+        margin-right: 1rem;
+        margin-bottom: 0;
+    }
+    
+    .contact-info {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .contact-item {
+        padding: 1rem;
+        justify-content: center;
+    }
+}
+
+/* Mobile Landscape */
+@media (max-width: 640px) {
+    .container {
+        padding: 0 20px;
+    }
+    
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    
+    .quick-links {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .quick-link-card {
+        padding: 1.5rem;
+    }
+    
+    .quick-link-card i {
+        font-size: 2.5rem;
+    }
+    
+    .detail-card h3 {
+        font-size: 1.3rem;
+    }
+    
+    .nav-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .nav-card {
+        padding: 1.2rem;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    .hero {
+        height: 70vh;
+        padding: 0 10px;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+    
+    .hero-subtitle {
+        font-size: 0.9rem;
+    }
+    
+    .btn {
+        padding: 0.7rem 1.5rem;
+        font-size: 0.9rem;
+    }
+    
+    .section {
+        padding: 40px 0;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .detail-intro h2 {
+        font-size: 1.5rem;
+    }
+    
+    .detail-card {
+        padding: 1.5rem;
+    }
+    
+    .detail-card h3 {
+        font-size: 1.2rem;
+    }
+    
+    .detail-card p {
+        font-size: 0.9rem;
+    }
+    
+    .quick-link-card {
+        padding: 1.2rem;
+    }
+    
+    .quick-link-card i {
+        font-size: 2rem;
+    }
+    
+    .quick-link-card h3 {
+        font-size: 1.1rem;
+    }
+    
+    .quick-link-card p {
+        font-size: 0.8rem;
+    }
+    
+    .dance-features li,
+    .music-list li {
+        font-size: 0.9rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .dancer-card {
+        padding: 1.2rem;
+    }
+    
+    .dancer-card h5 {
+        font-size: 1.1rem;
+    }
+    
+    .dancer-card p {
+        font-size: 0.85rem;
+    }
+    
+    .philosophy-item {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .philosophy-icon {
+        font-size: 1.8rem;
+        margin-right: 0;
+        margin-bottom: 0.5rem;
+    }
+    
+    .nav-card {
+        padding: 1rem;
+    }
+    
+    .nav-card i {
+        font-size: 1.5rem;
+    }
+    
+    .contact-item {
+        padding: 0.8rem 1rem;
+    }
+    
+    .footer {
+        padding: 1.5rem 0;
+        font-size: 0.9rem;
+    }
+}
+
+/* Extra Small Mobile */
+@media (max-width: 360px) {
+    .hero-title {
+        font-size: 1.8rem;
+    }
+    
+    .section-title {
+        font-size: 1.6rem;
+    }
+    
+    .detail-card {
+        padding: 1.2rem;
+    }
+    
+    .quick-link-card {
+        padding: 1rem;
+    }
+    
+    .dancer-card {
+        padding: 1rem;
+    }
+    
+    .btn {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.8rem;
+    }
+}
+
+/* High DPI Displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .hero-background {
+        background-size: 200% 200%;
+    }
+}
+
+/* Landscape Orientation on Mobile */
+@media screen and (orientation: landscape) and (max-height: 600px) {
+    .hero {
+        height: 100vh;
+        padding: 20px;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+    }
+    
+    .hero-buttons {
+        flex-direction: row;
+        gap: 1rem;
+    }
+    
+    .btn {
+        padding: 0.6rem 1.5rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .hero,
+    .navbar,
+    .footer,
+    .hamburger,
+    .scroll-indicator {
+        display: none;
+    }
+    
+    .section {
+        padding: 20px 0;
+        page-break-inside: avoid;
+    }
+    
+    .detail-card {
+        border: 1px solid #ccc;
+        margin-bottom: 20px;
+        page-break-inside: avoid;
+    }
+    
+    .section-title {
+        color: #000 !important;
+        font-size: 24px;
+    }
+    
+    .detail-card h3,
+    .detail-card p,
+    .music-list li,
+    .dance-features li {
+        color: #000 !important;
+    }
+}
+
+/* ==========================================================================
    Animation for skill bars (triggered by JavaScript)
    ========================================================================== */
 
